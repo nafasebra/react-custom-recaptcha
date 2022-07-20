@@ -4,8 +4,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>Verify captcha to go to page!</p>
-
+      <p>Please Verify captcha for go to page!</p>
     </div>
   )
 }
