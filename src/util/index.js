@@ -1,4 +1,4 @@
-const characters = 'abc123';
+const characters = 'abcdefghijklmnopqrstuvwxyz1234567890';
 export function generateString(length = 0) {
    let result = ''
    const charactersLength = characters.length;
