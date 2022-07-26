@@ -3,11 +3,9 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: #454545;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -56,38 +54,39 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+input[type="text"] {
+  background-color: #ffffff;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  color: #212121;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.captcha_image {
+  background-image: url('./assets/bgcaptcha.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+.captcha_image h3 {
+  margin: 0;
+  color: #535bf2;
+  letter-spacing: 1rem;
+  font-style: italic;
+}
+.captcha_form {
+  display: flex;
+  flex-direction: column;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
 
 .card {
