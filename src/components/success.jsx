@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Success() {
   return (
@@ -6,7 +6,7 @@ function Success() {
       <h1>Success!</h1>
       <p>Thanks for login to the website!</p>
     </div>
-  )
+  );
 }
 
-export default Success
+export default Success;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { generateString } from "../util";
 import Success from "./success";
 
-function Captcha() {
+function Captcha({ length }) {
   const [captchaValue, setCaptchaValue] = useState("");
   const [generatedCaptcha, setGeneratedCaptcha] = useState("");
   const [statusSuccess, setStateSuccess] = useState(false);
@@ -12,11 +12,10 @@ function Captcha() {
   }, []);
 
   const onSubmit = () => {
-    if (generatedCaptcha === captchaValue) {
+    if (generatedCaptcha === captchaValue)
       setStateSuccess(true);
-    } else {
-      setGeneratedCaptcha(generateString(6));
-    }
+    else
+      setGeneratedCaptcha(generateString(length));
   };
 
   return (
