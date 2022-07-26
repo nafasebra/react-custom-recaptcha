@@ -12,7 +12,7 @@ function Captcha({ length }) {
   }, []);
 
   const onSubmit = () => {
-    if (generatedCaptcha === captchaValue)
+    if (generatedCaptcha.split('   ').join('') === captchaValue)
       setStateSuccess(true);
     else
       setGeneratedCaptcha(generateString(length));

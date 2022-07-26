@@ -74,7 +74,8 @@ input[type="text"] {
 .captcha_image h3 {
   margin: 0;
   color: #535bf2;
-  letter-spacing: 1rem;
+  user-select: none !important;
+  letter-spacing: 0.4rem;
   font-style: italic;
 }
 .captcha_form {
