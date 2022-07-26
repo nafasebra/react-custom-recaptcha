@@ -5,7 +5,6 @@ function App() {
 
   return (
     <div className="App">
-      <p>Please Verify captcha for go to page!</p>
       <Captcha length={6}/>
     </div>
   )

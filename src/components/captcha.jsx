@@ -22,6 +22,7 @@ function Captcha({ length }) {
     <div className="captcha_container">
       {statusSuccess === false ? (
         <>
+          <p>Please Verify captcha for go to page!</p>
           <div className="captcha_image">
             <h3>{generatedCaptcha}</h3>
           </div>
@@ -30,7 +31,7 @@ function Captcha({ length }) {
               type="text"
               value={captchaValue}
               onChange={(e) => setCaptchaValue(e.target.value)}
-              placeholder="Enter code..."
+              placeholder="Enter captcha..."
             />
             <button onClick={onSubmit}>Verify</button>
           </div>

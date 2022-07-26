@@ -64,6 +64,17 @@ input[type="text"] {
   margin-bottom: 1rem;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 .captcha_image {
   background-image: url('./assets/bgcaptcha.png');
   background-repeat: no-repeat;
@@ -82,22 +93,6 @@ input[type="text"] {
   display: flex;
   flex-direction: column;
 }
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 
 @media (prefers-color-scheme: light) {
   :root {
