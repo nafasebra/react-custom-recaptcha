@@ -8,14 +8,16 @@ function Captcha({ length }) {
   const [statusSuccess, setStateSuccess] = useState(false);
 
   useEffect(() => {
-    setGeneratedCaptcha(generateString(6));
+    setGeneratedCaptcha(generateString(length));
   }, []);
 
   const onSubmit = () => {
-    if (generatedCaptcha.split('   ').join('') === captchaValue)
-      setStateSuccess(true);
-    else
-      setGeneratedCaptcha(generateString(length));
+    if(captchaValue !== "") {
+      if (generatedCaptcha.split('   ').join('') === captchaValue)
+        setStateSuccess(true);
+      else
+        setGeneratedCaptcha(generateString(length));
+    } else alert('The captcha field is empty!');
   };
 
   return (
